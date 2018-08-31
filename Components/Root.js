@@ -2,15 +2,15 @@ import React from 'react';
 
 import {StackNavigator} from 'react-navigation';
 
-import Login from '../LogIn';
+import LogIn from './LogIn';
 
 import Register from './Register';
 
 import Recover from './Recover';
 
 export const HomeStack = StackNavigator({
-  Login: {
-    screen:Login
+    LogIn: {
+    screen:LogIn
   },
   Register: {
     screen:Register
@@ -19,7 +19,7 @@ export const HomeStack = StackNavigator({
     screen:Recover
   }
 },
-{ initialRouteName: 'Login',
+{ initialRouteName: 'LogIn',
   headerMode: 'none'
 });
 

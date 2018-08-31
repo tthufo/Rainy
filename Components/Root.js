@@ -8,6 +8,8 @@ import Register from './Register';
 
 import Recover from './Recover';
 
+import Home from './Home';
+
 export const HomeStack = StackNavigator({
     LogIn: {
     screen:LogIn
@@ -17,6 +19,9 @@ export const HomeStack = StackNavigator({
   },
   Recover: {
     screen:Recover
+  },
+  Home: {
+    screen:Home
   }
 },
 { initialRouteName: 'LogIn',
